@@ -1,0 +1,20 @@
+ type Query{
+     lolomo: [ShowCategory]
+     search(searchFilter: SearchFilter) :[Show]
+ }
+
+
+ input SearchFilter {
+     title: String
+ }
+
+
+ type ShowCategory{
+     id: Int
+     name: String
+     shows: [Show]
+ }
+ type Show{
+     title: String
+     artworkUrl: String
+ }
